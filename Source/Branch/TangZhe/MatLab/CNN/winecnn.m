@@ -1,7 +1,7 @@
 clear all; close all; clc;
 
 % load train dataset and labels
-traindata = 'D:\CodingTest\DCNN\data3\winedata\train';
+traindata = '..\..\..\..\..\Data\01Data';
 [name, train_y] = getdataset(traindata);
 [class, number] = size(name);
 for i = 1:number
@@ -12,7 +12,7 @@ for i = 1:number
 end
 
 % load test dataset and labels
-testdata = 'D:\CodingTest\DCNN\data3\winedata\test';
+testdata = '..\..\..\..\..\Data\02Data';
 [testname, test_y] = getdataset(testdata);
 [class, number] = size(testname);
 for i= 1:number
