@@ -5,32 +5,73 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
-    </Filter>
     <Filter Include="Resource Files">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\DataLoading">
+      <UniqueIdentifier>{cbf978e7-5d93-4909-bb48-a8df99182f85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CNN">
+      <UniqueIdentifier>{9a92f84e-e158-4a64-8aa3-4f997335b8d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\API">
+      <UniqueIdentifier>{bb1ebc6b-ffe0-4a5a-9d89-fe1a16cfe096}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\BasicAlgorithm">
+      <UniqueIdentifier>{5d576983-c51f-4654-9b0e-ae7871b63134}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="stdafx.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="..\src\stdafx.h">
+      <Filter>Source Files\API</Filter>
     </ClInclude>
-    <ClInclude Include="targetver.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="..\src\targetver.h">
+      <Filter>Source Files\API</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\DataLoading.h">
+      <Filter>Source Files\DataLoading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ImageOperation.h">
+      <Filter>Source Files\BasicAlgorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\RGBConvertor.h">
+      <Filter>Source Files\BasicAlgorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\CNNLayers.h">
+      <Filter>Source Files\CNN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Common.h">
+      <Filter>Source Files\DataLoading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\CNN.h">
+      <Filter>Source Files\CNN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\alg.hpp">
+      <Filter>Source Files\BasicAlgorithm</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="stdafx.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="..\src\DataLoading.cpp">
+      <Filter>Source Files\DataLoading</Filter>
     </ClCompile>
-    <ClCompile Include="WinRecog.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="..\src\stdafx.cpp">
+      <Filter>Source Files\API</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\WinRecog.cpp">
+      <Filter>Source Files\API</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\RGBConvertor.cpp">
+      <Filter>Source Files\BasicAlgorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\CNNLayers.cpp">
+      <Filter>Source Files\CNN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\CNN.cpp">
+      <Filter>Source Files\CNN</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

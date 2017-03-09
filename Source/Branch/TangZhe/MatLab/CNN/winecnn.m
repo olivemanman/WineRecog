@@ -1,18 +1,17 @@
 clear all; close all; clc;
 
 % load train dataset and labels
-traindata = '..\..\..\..\..\Data\01Data';
+traindata = '..\..\..\..\..\..\Data\02Data';
 [name, train_y] = getdataset(traindata);
 [class, number] = size(name);
 for i = 1:number
     img = rgb2gray(imread(name{1,i}));
     img = imresize(img, [32 32]);
-    
     train_x(:, :, i) = double(img) / 255.0;
 end
 
 % load test dataset and labels
-testdata = '..\..\..\..\..\Data\02Data';
+testdata = '..\..\..\..\..\..\Data\02Data';
 [testname, test_y] = getdataset(testdata);
 [class, number] = size(testname);
 for i= 1:number
@@ -36,7 +35,7 @@ cnn.layers = {
 cnn = cnnsetup(cnn, train_x, train_y);
 
 opts.alpha = 1;
-opts.batchsize = 7;
+opts.batchsize = 8;
 opts.numepochs = 200;
 
 cnn = cnntrain(cnn, train_x, train_y, opts);
